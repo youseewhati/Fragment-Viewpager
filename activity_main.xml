@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.admin.myapplication.MainActivity">
+
+<ImageView
+    android:id="@+id/main_iv"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@mipmap/create_icon_normal"
+    android:layout_alignParentBottom="true"
+    android:layout_centerInParent="true"
+    android:layout_marginBottom="7dp"/>
+
+    <RadioGroup
+        android:id="@+id/main_rg"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/home"
+            style="@style/RadioButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/home_pic_select"
+            android:text="首页" />
+
+        <RadioButton
+            android:id="@+id/rg_news"
+            style="@style/RadioButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/sign_pic_select"
+            android:text="新闻"
+            />
+
+        <RadioButton
+            android:visibility="invisible"
+            style="@style/RadioButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             />
+
+        <RadioButton
+            android:id="@+id/shopping"
+            style="@style/RadioButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/line_pic_select"
+            android:text="商城" />
+
+        <RadioButton
+            android:id="@+id/my"
+            style="@style/RadioButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/my_pic_select"
+            android:text="我的" />
+
+
+    </RadioGroup>
+
+
+
+    <com.example.admin.myapplication.Utils.MyViewpagerNoScroll
+        android:id="@+id/main_vp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/main_rg"
+        android:layout_alignParentStart="true">
+
+    </com.example.admin.myapplication.Utils.MyViewpagerNoScroll>
+
+
+
+
+
+
+</RelativeLayout>
